@@ -1,0 +1,2 @@
+include ':app', ':plugin_standard_lib', ':plugin_package'
+rootProject.name='AndroidPlugin-Placeholder'
