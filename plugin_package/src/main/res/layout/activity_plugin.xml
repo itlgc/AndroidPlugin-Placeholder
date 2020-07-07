@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PluginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是插件Activity"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <!--    android:onClick="start" 在插件包中这么写会报错，因为没有组件环境-->
+    <Button
+        android:id="@+id/btn_start_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插件内部跳转插件Activity" />
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插件内部开启插件Service" />
+
+    <Button
+        android:id="@+id/btn_register_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插件内注册插件广播接收者" />
+
+    <Button
+        android:id="@+id/btn_send_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插件内发送广播" />
+</LinearLayout>
