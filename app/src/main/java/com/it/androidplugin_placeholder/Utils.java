@@ -61,42 +61,6 @@ public class Utils {
         return "";
     }
 
-
-//    public static String updatePluginApk(Context context, String dirName, String fileName) {
-//        try {
-//            //            File cacheDir = context.getCacheDir();
-//            File cacheDir = context.getDir(dirName, Context.MODE_PRIVATE);
-//            if (!cacheDir.exists()) {
-//                cacheDir.mkdirs();
-//            }
-//
-//            File outFile = new File(cacheDir, fileName);
-//
-//            InputStream is = context.getAssets().open(fileName);
-//            FileOutputStream fos = new FileOutputStream(outFile);
-//            byte[] buffer = new byte[is.available()];
-//            int byteCount;
-//            while ((byteCount = is.read(buffer)) != -1) {
-//                fos.write(buffer, 0, byteCount);
-//            }
-//            fos.flush();
-//            is.close();
-//            fos.close();
-//            Log.d("TAG:", "文件更新成功" + outFile.getAbsolutePath());
-//            return outFile.getAbsolutePath();
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return "";
-//
-//    }
-
-
-//    public static String updatePluginApk(Context context, String fileName) {
-//        return updatePluginApk(context, "pluginDir", fileName);
-//    }
-
     public static File getPluginApkPath(Context context) {
         //获取插件包放置路径
         File file = new File(context.getDir("pluginHookDir",Context.MODE_PRIVATE),
@@ -105,7 +69,6 @@ public class Utils {
             Log.d("TAG:" , "插件包不存在");
             return null;
         }
-        //            String pluginPath = file.getAbsolutePath();
         return file;
     }
 

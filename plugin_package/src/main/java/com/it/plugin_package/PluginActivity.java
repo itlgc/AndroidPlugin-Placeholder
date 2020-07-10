@@ -11,7 +11,7 @@ import android.widget.Toast;
  */
 public class PluginActivity extends BaseActivity {
 
-    public static final String ACTION = "com.lgc.jg08_plugins_package.action";
+    public static final String ACTION = "com.it.plugin_package.action";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

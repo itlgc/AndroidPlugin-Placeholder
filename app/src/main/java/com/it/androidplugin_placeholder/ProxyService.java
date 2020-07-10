@@ -33,7 +33,7 @@ public class ProxyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         String className = intent.getStringExtra("className");
         try {
-            //加载插件包apk中的 com.lgc.jg08_plugins_package.TestService
+            //加载插件包apk中的 com.it.plugin_package.TestService
             Class<?> TestServiceClass =
                     PluginManager.getInstance(this).getDexClassLoader().loadClass(className);
             Object TestService = TestServiceClass.newInstance();
